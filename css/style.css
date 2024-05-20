@@ -318,7 +318,7 @@ main .product-section-1 img:hover{
 /*todo Discover more section */
 .discover-more{
     width: 100%;
-    background: url(/assets/Images/Discover\ more\ bg.avif),linear-gradient(112.1deg, rgb(32, 38, 57) -8.6%, rgb(63, 76, 119) -0.8%);
+    background: url(./assets/Images/Discover\ more\ bg.avif),linear-gradient(112.1deg, rgb(32, 38, 57) -8.6%, rgb(63, 76, 119) -0.8%);
     background-blend-mode: multiply;
     background-size: cover;  
     background-position: center; 
