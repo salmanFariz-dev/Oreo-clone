@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: "Fredoka", sans-serif;
+}
+.main-container{
+    margin: auto;
+    width: 95%;
+    max-width: 1400px;
+    color: #303B43;
+}
+
+/*todo header section */
+header .top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+header .logo-section{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .logo-section .logo-cookie{
+    width: 60px;
+}
+header .logo-section .oreo-logo {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(58deg,rgba(5,174,255,1) 0%,rgba(230,13,104,1) 68%,rgba(240,103,7,1) 100%);
+}
+header .top-nav{
+    display: flex;
+    gap: 20px;
+}
+header .top-nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 22% 26% 22% 22% / 50% 50% 50% 50% ;
+    transition-property: background-color;
+    transition: .3s;
+}
+header .top-nav a:hover{
+    background-color: rgba(173, 216, 230, 0.5);
+    color: #0058c9;
+}
+
+header .top-nav a span{
+    font-size: 30px;
+    padding-right: 5px;
+}
+header .user-area{
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+header .bottom-section{
+    width: 100%;
+    padding: 10px 0;
+}
+header .bottom-nav{
+    width: max-content;
+    display: flex;
+    gap: 35px;
+    margin: auto;
+    letter-spacing: .6px;
+}
+header .bottom-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+header .bottom-nav #arrow-icon{
+    font-size: 20px;
+    position: absolute;
+}
+
+/*todo main section */
+main{
+    width: 100%;
+    padding-top: 40px;
+}
+main .image-slider{
+    width: 100%;
+    padding: 0 30px;
+}
+main .image-slider img{
+    width: 100%;
+}
+
+main .product-section-1{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 100px 0;
+}
+main .product-section-1 img{
+    width: 100%;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+main .product-section-1 img:hover{
+    background-color: #5a31f4;
+}
+
+/*todo Feature section */
+.feature-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.feature-section .left-section{
+   min-width:50% ;
+}
+.feature-section .oreoid-logo img{
+    width: 150px;
+}
+.feature-section .oreoid-text{
+    letter-spacing: 1px;
+}
+.feature-section .oreoid-text h1{
+    font-size: 3rem;
+    color:#303B43 ;
+    margin-bottom: 15px;
+}
+.feature-section .oreoid-text p{
+    font-weight: 300;
+    font-size: 25px;
+}
+.feature-section .oreoid-btn{
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 500;
+    color: white;
+    background-image: linear-gradient(58deg,rgba(5,174,255,1) 0%,rgba(230,13,104,1) 68%,rgba(240,103,7,1) 100%);
+}
+.feature-section .oreoid-btn img{
+    width: 25px;
+}
+.feature-section .right-section{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.feature-section .right-section img{
+    width: 70%;
+}
+
+/*todo Twist section */
+.twist-section{
+    width: 100%;
+    height: 750px;
+    background-color: #0058C9;
+    color: white;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-sizing: content-box;
+}
+.twist-section h1{
+    font-size: 6rem;
+    text-align: center;
+}
+.twist-section > div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.twist-section img{
+    position: absolute;
+}
+.twist-section .top-left-cookie{
+    top: -15px;
+    left: 5%;
+}
+.twist-section .top-right-cookie{
+    top: -20px;
+    right: 5%;
+}
+.twist-section .bottom-left-cookie{
+    bottom: -20px;
+    left: 5%;
+}
+.twist-section .bottom-center-cookie{
+    left: 40%;
+    bottom: 0;
+}
+.twist-section .bottom-right-cookie{
+    right: 4%;
+    bottom: 20px;
+}
+.twist-section .center-cookie{
+    width: 300px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.twist-section .bottom-wave{
+    bottom: -15%;
+}
+
+.rotate-effect{
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*todo Product section 2 */
+.product-section-2{
+    width: 100%;
+    padding-top: 100px;
+}
+.product-section-2 h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.product-section-2 img{
+    width: 100%;
+}
+.product-section-2 > div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.product-section-2 .product-wrapper{
+    width: 250px;
+}
+.product-section-2 .product-top{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.product-section-2 > div div:nth-child(4) img{
+   margin-top: 35px;
+}
+.product-section-2 > div div:nth-child(5) img{
+    margin-top: 35px;
+}
+
+/*todo Recipes section */
+.recipes-section{
+    width: 100%;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+.recipes-section .head-text p{
+    font-size: .8em;
+    font-weight: 300;
+}
+.recipes-section .recipes-container{
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.recipes-section .recipes-container .recipes{
+    width: 30%;
+}
+.recipes-section .recipes-container img{
+    width: 400px;
+    border-radius: 8px;
+}
+.recipes-section button{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #0058C9;
+    transition-property: background-color;
+    transition-duration: .3s;
+    cursor: pointer;
+
+}
+.recipes-section button:hover{
+    background-color: #6BBCE5;
+    color: black;
+}
+
+/*todo Discover more section */
+.discover-more{
+    width: 100%;
+    background: url(/assets/Images/Discover\ more\ bg.avif),linear-gradient(112.1deg, rgb(32, 38, 57) -8.6%, rgb(63, 76, 119) -0.8%);
+    background-blend-mode: multiply;
+    background-size: cover;  
+    background-position: center; 
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.discover-more h1{
+    font-size: 4rem;
+}
+.discover-more p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 50px 0;
+}
+.discover-more button{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 13px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #0058C9;
+    cursor: pointer;
+    transition-duration: .3s;
+    transition-property: background;
+}
+
+.discover-more button:hover{
+    background-color: #6BBCE5;
+    color: black;
+}
+
+
+/*todo Footer */
+footer{
+    width: 100%;
+    background-color: #0058C9;
+    color: white;
+    padding: 0 30px;
+}
+footer .head{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+footer .head img{
+    width: 350px;
+    margin: 0 auto;
+}
+footer .head h1{
+    font-size: 3.5rem;
+    color: white;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+footer .content {
+    display: flex;
+    padding: 70px 0;
+}
+footer .content .social-media{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+footer .content .social-media img{
+    width: 200px;
+}
+footer .content .social-media .social-links{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+footer .content .social-media a{
+    color: white;
+    text-decoration: none;
+}
+footer .content .links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .content .links a{
+    color:  white;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer .content .subscribe-area h2{
+    font-size: 2rem;
+}
+footer .content .subscribe-area .text-box{
+    width: 390px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+footer .content .subscribe-area .input-box{
+    width: 80%;
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5px;
+}
+footer .content .subscribe-area input{
+    width: 190px;
+    border: none;
+    padding-left: 14px;
+    font-size: 17px;
+}
+footer .content .subscribe-area button{
+    background-color: #0058C9;
+    color: white;
+    border: none;
+    flex: 1;
+    height: 100%;
+    border-radius: 5px;
+}
+footer hr{
+    color: rgb(255, 255, 255, .7);
+}
+footer .bottom-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    
+}
+footer #copyright{
+    font-weight: 300;
+    font-size: 16px;
+}
+footer .bottom-section .links{
+    display: flex;
+    gap: 30px;
+}
+footer .bottom-section .links a{
+    color:  white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+footer .bottom-section .links a:hover{
+    text-decoration: underline;
+}
+footer .bottom-section .links a::after{
+    content: ".";
+    position: absolute;
+    top: -50%;
+    right: -20px;
+    font-size: 25px;
+}
+footer .bottom-section .links a:last-child::after{
+    content: '';
+}
